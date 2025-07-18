@@ -1,4 +1,4 @@
-
+import React from 'eact';
 import ProfilePage from './ProfilePage';
 import userContext from './UserContext';
 function App() {
