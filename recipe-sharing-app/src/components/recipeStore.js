@@ -1,8 +1,14 @@
 import { create } from "zustand";
 
 const useRecipeStore = create((set) => ({
-    recipes: [],
-    searchTerm: [],
+    recipes: [
+        { id: 1, title: "Spaghetti", Description: "Delicious pasta with sauce" },
+        { id: 2, title: "Pancakes", Description: "Fluffy breakfast Treat" },
+        { id: 3, title: "Salad", Description: "Healthy Vegetable mix" }
+        
+    ],
+    searchTerm: "",
+    filteredRecipes:[],
     recommendations: [],
     favorites: [],
     
