@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes,Route, Link } from 'react-router-dom'
-import SearchBar from './components/SearchBar'
-import RecipeList from './components/RecipeList'
-import AddRecipeForm from './components/AddRecipeForm'
-import RecipeDetails from './components/RecipeDetails'
+import SearchBar from './components/SearchBar';
+import RecipeList from './components/RecipeList';
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationList';
+import AddRecipeForm from './components/AddRecipeForm';
+import RecipeDetails from './components/RecipeDetails';
 import './App.css'
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
               <div>
                 <SearchBar />
                 <RecipeList />
+                <FavoritesList />
+                <RecommendationsList/>
                 <AddRecipeForm />
                 
               </div>
