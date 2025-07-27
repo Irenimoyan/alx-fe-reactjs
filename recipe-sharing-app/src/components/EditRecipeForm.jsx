@@ -26,6 +26,7 @@ const EditRecipeForm = ({ recipe }) => {
                 value={description}
                 onChange={(event) => setDescrription(event.target.value)}
             />
+            <button type="submit">Save Changes</button>
         </form>
     );
 }
