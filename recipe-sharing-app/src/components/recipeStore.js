@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const useRecipeStore = create((set) => ({
+const setRecipes = create((set) => ({
     recipes: [
         { id: 1, title: "Spaghetti", Description: "Delicious pasta with sauce" },
         { id: 2, title: "Pancakes", Description: "Fluffy breakfast Treat" },
@@ -57,3 +57,4 @@ const useRecipeStore = create((set) => ({
     
 }))
 
+export default setRecipes;
