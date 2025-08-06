@@ -4,7 +4,7 @@ function Userprofile() {
             <img className="rounded-full w-36 h-36 mx-auto"
                 src="./img/userimg" alt=""
             />
-            <h1 className=" text-lg text-blue-800 my-400">John Doe</h1>
+            <h1 className=" text-xl text-blue-800 my-400">John Doe</h1>
             <p className="text-gray-600 text-base">Developer at Example Co. loves to write code,
                 and explore new technologies
             </p>
