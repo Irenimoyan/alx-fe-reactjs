@@ -3,13 +3,13 @@
         "id": 1,
         "title":"Spaghetti Carbonara",
         "summary": "A classic Italian dish made with spaghetti, bacon, eggs, and parmes",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-jumbo-v2.jpg?quality=75&auto=webp"
     },
     {
         "id": 2,
         "title": "Chicken Tikka Masala",
         "summary": "A popular Indian dish made with marinated chicken, creamy tomato sauce",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://www.seriouseats.com/thmb/AKv7r-Xt2anoVvsn0WpLqUehNzU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chicken-tikka-masala-for-the-grill-recipe-hero-2_1-cb493f49e30140efbffec162d5f2d1d7.JPG"
 
     }
 ]
