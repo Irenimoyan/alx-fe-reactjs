@@ -17,7 +17,7 @@ const Homepage = () => {
                 transform hover:scale-105 transition duration-300">
                     <img className="w-full" src="{recipes.img}" alt={recipes.title} />
                     <h2 className="font-bold text-xl mb-2">{recipes.title}</h2>
-                    <p className="text-gray-700 text-base mb-4">{recipes.description}</p>
+                    <p className="text-gray-700 text-base mb-4">{recipes.summary}</p>
                 </div>
             })}
         </div>

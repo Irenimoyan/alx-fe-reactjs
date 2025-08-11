@@ -2,13 +2,13 @@
     {
         "id": 1,
         "title":"Spaghetti Carbonara",
-        "description": "A classic Italian dish made with spaghetti, bacon, eggs, and parmes",
+        "summary": "A classic Italian dish made with spaghetti, bacon, eggs, and parmes",
         "image": "https://via.placeholder.com/150"
     },
     {
         "id": 2,
         "title": "Chicken Tikka Masala",
-        "description": "A popular Indian dish made with marinated chicken, creamy tomato sauce",
+        "summary": "A popular Indian dish made with marinated chicken, creamy tomato sauce",
         "image": "https://via.placeholder.com/150"
 
     }
