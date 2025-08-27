@@ -29,9 +29,9 @@ function RegistrationForm() {
 
         // simple validation
         let validationError = {};
-        if (!formData.username) validationError.username = "Username is required";
-        if (!formData.email) validationError.email = "Email is required";
-        if (!formData.password) validationError.password = "Password is required";
+        if (!username) validationError.username = "Username is required";
+        if (!email) validationError.email = "Email is required";
+        if (!password) validationError.password = "Password is required";
 
         if (Object.keys(validationError).length > 0) {
             setErrors(validationError);
