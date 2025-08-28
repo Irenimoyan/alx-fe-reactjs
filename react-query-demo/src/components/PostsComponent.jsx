@@ -22,6 +22,7 @@ function PostsComponent() {
         queryKey: ["posts"],
         queryFn: fetchPosts,
         staleTime: 5000,
+        cacheTime: 10000,
     });
 
     if (isLoading) return <p>Loading Posts...</p>;
