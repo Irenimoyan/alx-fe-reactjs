@@ -13,24 +13,24 @@ function PostsComponent() {
 
     const {
         data: posts,
-        isLoading,
+        keepPreviousData,
         isError,
         error,
-        refetch,
+        refetchOnWindowFocus,
         isFetching,
     } = useQuery({
         queryKey: ["posts"],
         queryFn: fetchPosts,
-        staleTime: 5000,
+        cacheTime: 5000,
     });
 
-    if (isLoading) return <p>Loading Posts...</p>;
+    if (keepPreviousData) return <p>Loading Posts...</p>;
     if (isError) return <p style={{ color: red }}>Error:{error.message}</p>
     
     return (
         <div>
             <h2>Posts</h2>
-            <button onClick={() => refetch()} disabled={isFetching}>
+            <button onClick={() => refetchOnWindowFocus()} disabled={isFetching}>
                 {isFetching ? "Refreshing..." : "Refresh Post"}
             </button>
 
