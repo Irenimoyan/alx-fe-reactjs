@@ -21,7 +21,7 @@ function PostsComponent() {
     } = useQuery({
         queryKey: ["posts"],
         queryFn: fetchPosts,
-        cacheTime: 5000,
+        staleTime: 5000,
     });
 
     if (isLoading) return <p>Loading Posts...</p>;
