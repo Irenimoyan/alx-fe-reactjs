@@ -1,24 +1,15 @@
-import { createContext, useContext, useState } from "react";
+import { Navigate } from "react-router-dom";   // ✅ Import Navigate
+import { useAuth } from "../context/AuthContext";
 
-// 1. Create context
-const AuthContext = createContext();
+function ProtectedRoute({ children }) {
+  const { isAuthenticated } = useAuth();
 
-// 2. Provide Auth state
-export function AuthProvider({ children }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  if (!isAuthenticated) {
+    // ✅ Use Navigate to redirect unauthenticated users
+    return <Navigate to="/" replace />;
+  }
 
-  // Fake login/logout functions
-  const login = () => setIsAuthenticated(true);
-  const logout = () => setIsAuthenticated(false);
-
-  return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
-      {children}
-    </AuthContext.Provider>
-  );
+  return children;
 }
 
-// 3. Custom hook
-export function useAuth() {
-  return useContext(AuthContext);
-}
+export default ProtectedRoute;
